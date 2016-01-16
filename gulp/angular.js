@@ -2,19 +2,19 @@ var Path = require('path');
 var Gulp = require('gulp');
 var Newer = require('gulp-newer');
 var Concat = require('gulp-concat');
-var Sass = require('gulp-sass');
 
-Gulp.task('sass', function () {
+Gulp.task('angular', function () {
 
     var bundleConfigs = [{
         entries: [
-            './src/sass/variables.scss',
-            './src/sass/bootstrap.scss',
-            './src/sass/font-awesome.scss',
-            './src/sass/custom.scss'
+            './node_modules/angular2/bundles/angular2-polyfills.js',
+            './node_modules/systemjs/dist/system.src.js',
+            './node_modules/rxjs/bundles/Rx.js',
+            './node_modules/angular2/bundles/angular2.dev.js',
+            './node_modules/angular2/http.js'
         ],
-        dest: './public/assets/css',
-        outputName: 'main.min.css'
+        dest: './public/assets/js',
+        outputName: 'angular-build.js'
     }];
 
     return bundleConfigs.map(function (bundleConfig) {
@@ -22,7 +22,6 @@ Gulp.task('sass', function () {
         return Gulp.src(bundleConfig.entries)
             .pipe(Newer(Path.join(bundleConfig.dest, bundleConfig.outputName)))
             .pipe(Concat(bundleConfig.outputName))
-            .pipe(Sass({outputStyle: 'compressed'}))
             .pipe(Gulp.dest(bundleConfig.dest));
     });
 });
