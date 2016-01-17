@@ -1,6 +1,5 @@
 import {Component, Inject} from 'angular2/core';
 import {TodoActions} from './todoActions';
-import {AppStore}
 
 @Component({
   selector: 'add-todo', 
