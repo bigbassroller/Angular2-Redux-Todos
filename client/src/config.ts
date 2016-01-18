@@ -7,7 +7,7 @@
 //   },
 //   //map tells the System loader where to look for things
 //   map: {
-//     app: "./src",
+//     app: "./client",
 //     'redux': 'https://cdnjs.cloudflare.com/ajax/libs/redux/3.0.4/redux.js'
 //   },
 //   //packages defines our app package

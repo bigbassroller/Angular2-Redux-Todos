@@ -8,10 +8,10 @@ Gulp.task('sass', function () {
 
     var bundleConfigs = [{
         entries: [
-            './src/sass/variables.scss',
-            './src/sass/bootstrap.scss',
-            './src/sass/font-awesome.scss',
-            './src/sass/custom.scss'
+            './client/sass/variables.scss',
+            './client/sass/bootstrap.scss',
+            './client/sass/font-awesome.scss',
+            './client/sass/custom.scss'
         ],
         dest: './public/assets/css',
         outputName: 'main.min.css'
