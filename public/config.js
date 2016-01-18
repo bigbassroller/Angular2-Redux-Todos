@@ -13,8 +13,8 @@ System.config({
   //packages defines our app package
   packages: {
     app: {
-      main: './main.ts',
-      defaultExtension: 'ts'
+      main: './main.js',
+      defaultExtension: 'js'
     }
   }
 });
