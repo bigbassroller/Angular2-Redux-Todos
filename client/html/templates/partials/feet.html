@@ -1,14 +1,28 @@
-	  <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
-	  <script src="https://code.angularjs.org/tools/system.js"></script>
-	  <script src="https://code.angularjs.org/tools/typescript.js"></script>
-	  <script src="assets/js/typescript/config.js"></script>
-	  <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
-	  <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.js"></script>
-	  <script src="https://code.angularjs.org/2.0.0-beta.0/http.min.js"></script>
+	<script src="./src/angular-build.js"></script> 
 
-	  <script>
-	    System.import('assets/js/typescript/app.js')
-	      .catch(console.error.bind(console));
-	  </script>
+  <script>
+		System.config({
+		  //use typescript for compilation
+		  transpiler: 'typescript',
+		  //typescript compiler options
+		  typescriptOptions: {
+		    emitDecoratorMetadata: true
+		  },
+		  //map tells the System loader where to look for things
+		  map: {
+		    app: "./src",
+		    'redux': 'https://cdnjs.cloudflare.com/ajax/libs/redux/3.0.4/redux.js'
+		  },
+		  //packages defines our app package
+		  packages: {
+		    app: {
+		      main: './main.js',
+		      defaultExtension: 'js'
+		    }
+		  }
+		});
+    System.import('src/boot.js')
+      .catch(console.error.bind(console));
+  </script>
   </body>
 </html>
