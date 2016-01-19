@@ -1,5 +1,5 @@
 {
-  "name": "html-ninja-star",
+  "name": "Angular2-Redux-Todos",
   "version": "1.0.0",
   "description": "Simple static html web page builder",
   "main": "gulpfile.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bigbassroller/ninja-star.git"
+    "url": "git+https://github.com/bigbassroller/Angular2-Redux-Todos.git"
   },
   "keywords": [],
   "author": "Michael Chavez, Space-Rocket | Web & Graphic Design",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bigbassroller/ninja-star/issues"
+    "url": "https://github.com/bigbassroller/Angular2-Redux-Todos/issues"
   },
-  "homepage": "https://github.com/bigbassroller/ninja-star#readme",
+  "homepage": "https://github.com/bigbassroller/Angular2-Redux-Todos#readme",
   "dependencies": {
     "angular2": "^2.0.0-beta.1",
     "bootstrap-sass": "^3.3.6",

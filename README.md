@@ -1,4 +1,4 @@
-# HTML Ninja Star
+# Angular 2 Redux Todos
 
 A simple static site builder that uses Gulp and Nunjucks
 
@@ -14,7 +14,7 @@ A simple static site builder that uses Gulp and Nunjucks
 
 | url                                                              | 
 |:---------------------------------------------------------------- |
-| [http://bigbassroller.github.io/html-ninja-star/](http://bigbassroller.github.io/html-ninja-star/) |
+| [http://bigbassroller.github.io/Angular2-Redux-Todos/](http://bigbassroller.github.io/Angular2-Redux-Todos/) |
 
 
 ## Requirements
@@ -30,7 +30,7 @@ $ npm install --global gulp
 ```
 Next git clone the repo and install npm packages:
 ```bash
-$ git clone git@github.com:bigbassroller/html-ninja-star.git && cd ./html-ninja-star
+$ git clone git@github.com:bigbassroller/Angular2-Redux-Todos.git && cd ./Angular2-Redux-Todos
 $ npm install
 ```
 
@@ -56,7 +56,7 @@ and relevant version details such as:
 ```bash
 $ npm version
 
-# {'html-ninja-star': '1.0.0',
+# {'Angular2-Redux-Todos': '1.0.0',
 #   npm: '3.3.12',
 #   ares: '1.10.1-DEV',
 #   http_parser: '2.6.0',
